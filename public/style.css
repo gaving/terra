@@ -1,0 +1,79 @@
+html, body, #map {
+  height: 100%;
+  width:100%;
+  padding:0px;
+  margin:0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.gmnoprint a, .gmnoprint span {
+  display:none;
+}
+.gmnoprint div {
+  background:none !important;
+}
+#map div div a div img{
+  display:none;
+}
+
+.gm-style-iw + div {
+  display: none;
+}
+
+#header {
+  background: #56bc8a;
+  box-shadow: inset 0 3px 0 rgba(0,0,0,.1);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  left: 0;
+  line-height: 45px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: top .3s ease-out 1.7s;
+  -moz-transition: top .3s ease-out 1.7s;
+  transition: top .3s ease-out 1.7s;
+  font-family: 'Lato', serif;
+
+}
+
+#header .wrong {
+  background: #CC0000 !important;
+  color: #FFF;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+#header .timer {
+  position: fixed;
+  top: 0;
+  right: 1em;
+  text-shadow: 0px 1px 1px #4d4d4d;
+  color: #222;
+  font: 2.5em 'LeagueGothicRegular';
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2rxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
