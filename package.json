@@ -12,6 +12,7 @@
     "backbone-react-component": "^0.7.2",
     "firebase": "^2.0.4",
     "flux": "^2.0.1",
+    "howler": "^1.1.25",
     "jquery": "^2.1.1",
     "moment": "^2.8.4",
     "proj4": "^2.3.3",

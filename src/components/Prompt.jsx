@@ -4,6 +4,8 @@
 
 var React = require('react');
 var _ = require('underscore');
+var Howler = require('howler');
+
 var MapStore = require('../stores/MapStore');
 var Timer = require('./Timer');
 
@@ -28,8 +30,14 @@ var Prompt = React.createClass({
         data: this.state.data
       });
       e.setMap(null);
+      new Howler.Howl({
+        urls: ['sfx/correct.mp3']
+      }).play();
       return;
     }
+    new Howler.Howl({
+      urls: ['sfx/boo.wav']
+    }).play();
     this.setState({
       'wrong': true
     });

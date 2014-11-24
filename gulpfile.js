@@ -48,6 +48,7 @@ gulp.task('deps', function() {
   b.require('react-router');
   b.require('firebase');
   b.require('moment');
+  b.require('howler');
   b.transform('envify');
 
   return b.bundle()
@@ -75,6 +76,7 @@ gulp.task('build', ['lint'], function() {
   b.external('react-router');
   b.external('firebase');
   b.external('moment');
+  b.external('howler');
   b.transform('envify');
 
   var stream = b.bundle()
