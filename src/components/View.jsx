@@ -33,8 +33,7 @@ var View = React.createClass({
 
   getInitialState: function() {
     return {
-      center: new LatLng(-30.3080, 132.1245),
-      data: []
+      center: new LatLng(-30.3080, 132.1245)
     };
   },
 

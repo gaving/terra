@@ -28,7 +28,6 @@ html, body, #map {
   background: #56bc8a;
   box-shadow: inset 0 3px 0 rgba(0,0,0,.1);
   color: #fff;
-  cursor: pointer;
   font-weight: 700;
   left: 0;
   line-height: 45px;
@@ -41,7 +40,14 @@ html, body, #map {
   -moz-transition: top .3s ease-out 1.7s;
   transition: top .3s ease-out 1.7s;
   font-family: 'Lato', serif;
+}
 
+#prompt .loading {
+  display: none;
+}
+
+#prompt.done {
+  background: #6BBA70;
 }
 
 #header .wrong {
@@ -52,7 +58,7 @@ html, body, #map {
   transition-timing-function: ease-out;
 }
 
-#header .timer {
+#timer {
   position: fixed;
   top: 0;
   right: 1em;
@@ -60,6 +66,17 @@ html, body, #map {
   color: #222;
   font: 2.5em 'LeagueGothicRegular';
 }
+
+#timer.done {
+  color: red;
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /* latin-ext */
 @font-face {

@@ -55,7 +55,7 @@ var Terra = React.createClass({
     return (
       <div>
         <section id="header">
-          <Prompt data={this.state.data} />
+          <Prompt collection={this.state.data} />
         </section>
         <section id="main">
           <View collection={this.state.data} />
