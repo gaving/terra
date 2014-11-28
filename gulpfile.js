@@ -42,15 +42,6 @@ gulp.task('transpile', ['clean-modules'], function() {
 
 gulp.task('deps', function() {
   var b = browserify({detectGlobals: false});
-  b.require('events');
-  b.require('react/addons');
-  b.require('react/addons', {expose: 'react'});
-  b.require('react-router');
-  b.require('firebase');
-  b.require('moment');
-  b.require('howler');
-  b.transform('envify');
-
   return b.bundle()
   .pipe(source('deps.js'))
   .pipe(gulp.dest('./build'))
@@ -70,14 +61,6 @@ gulp.task('build', ['lint'], function() {
     debug: !gutil.env.production
     , detectGlobals: false
   });
-  b.external('events');
-  b.external('react/addons');
-  b.external('react');
-  b.external('react-router');
-  b.external('firebase');
-  b.external('moment');
-  b.external('howler');
-  b.transform('envify');
 
   var stream = b.bundle()
   .on('error', function(err) {
