@@ -17,6 +17,9 @@ var Timer = React.createClass({
   componentWillUnmount: function() {
     clearInterval(this.interval);
   },
+  getTime: function() {
+    return this.state.seconds;
+  },
   done: function() {
     this.setState({
       'done': true

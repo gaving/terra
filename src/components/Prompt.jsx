@@ -62,6 +62,9 @@ var Prompt = React.createClass({
       new Howler.Howl({
         urls: ['sfx/applause.mp3']
       }).play();
+      this.props.onFinished({
+        'score': this.refs.timer.getTime()
+      });
       this.refs.timer.done();
     }.bind(this));
   },

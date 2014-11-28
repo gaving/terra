@@ -10,6 +10,7 @@
   "dependencies": {
     "backbone": "^1.1.2",
     "backbone-react-component": "^0.7.2",
+    "faker": "^2.1.0",
     "firebase": "^2.0.5",
     "flux": "^2.0.1",
     "howler": "^1.1.25",
