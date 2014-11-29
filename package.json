@@ -10,7 +10,7 @@
   "dependencies": {
     "backbone": "^1.1.2",
     "backbone-react-component": "^0.7.2",
-    "faker": "^2.1.0",
+    "faker": "^2.1.1",
     "firebase": "^2.0.5",
     "flux": "^2.0.1",
     "howler": "^1.1.25",
@@ -21,7 +21,7 @@
     "react-addons": "^0.9.0",
     "react-bootstrap": "^0.13.0",
     "react-googlemaps": "^0.3.0",
-    "react-router": "~0.11.2",
+    "react-router": "~0.11.4",
     "reactfire": "^0.4.0",
     "reactify": "^0.17.1",
     "setimmediate": "^1.0.2",
