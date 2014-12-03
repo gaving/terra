@@ -20,11 +20,12 @@ var Timer = React.createClass({
   getTime: function() {
     return this.state.seconds;
   },
-  done: function() {
+  done: function(cb) {
     this.setState({
       'done': true
     }, function() {
       this.unmountComponent();
+      cb(this.state.seconds);
     }.bind(this));
   },
   render: function() {
