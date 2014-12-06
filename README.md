@@ -6,5 +6,3 @@ A learning tool for the cities of Terra Australis
 
 - Splash
 - Areas
-- Scoreboard
-- Interactive
