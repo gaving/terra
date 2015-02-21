@@ -24,7 +24,7 @@ var Terra = React.createClass({
     this.firebase.child('data').once('value', function(snapshot) {
       var data = snapshot.val();
       var features = _.filter(data.features, function(feature) {
-        return feature.geometry.type === 'Point' || feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon'
+        return feature.geometry.type === 'Point';
       });
       this.setState({
         data: new Backbone.Collection((function() {
