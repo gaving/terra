@@ -1,8 +1,5 @@
 # Terra
 
-A learning tool for the cities of Terra Australis
+A learning tool for Australia
 
-## Todo
-
-- Splash
-- Areas
+![screen](https://github.com/gaving/terra/raw/master/docs/1.png)
