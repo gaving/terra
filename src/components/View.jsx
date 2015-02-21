@@ -25,7 +25,6 @@ var View = React.createClass({
   mixins: [BackboneMixin],
 
   createEntry: function (entry) {
-    console.log(entry);
     if (!entry.type) {
       return;
     }
@@ -53,13 +52,7 @@ var View = React.createClass({
             return new LatLng(point[1], point[0]);
           }));
         });
-    //var blueCoords = [
-        //new LatLng(25.774, -60.190),
-        //new LatLng(18.466, -46.118),
-        //new LatLng(32.321, -44.757)
-      //];
 
-      console.log(blueCoords);
       return (
         <span>
         <Polygon
